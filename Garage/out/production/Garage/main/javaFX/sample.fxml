@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="backgroundPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.javaFX.Controller">
+   <children>
+      <ListView fx:id="viezeAutoLijst" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="200.0" />
+      <Button fx:id="button_Wasplaats1" layoutX="225.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="25.0" prefWidth="120.0" text="Wasplaats 1" />
+      <Button fx:id="button_Wasplaats2" layoutX="356.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="25.0" prefWidth="120.0" text="Wasplaats 2" />
+      <Button fx:id="button_Wasplaats3" layoutX="487.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonPressed" prefHeight="25.0" prefWidth="120.0" text="Wasplaats 3" />
+      <ListView fx:id="schoneAutoLijst" layoutX="622.0" layoutY="14.0" prefHeight="370.0" prefWidth="200.0" />
+      <Button fx:id="button_Restart" layoutX="225.0" layoutY="359.0" mnemonicParsing="false" onAction="#Restart" prefHeight="25.0" prefWidth="389.0" text="Start simulatie" />
+      <Canvas fx:id="ToPaintOn" height="200.0" layoutX="225.0" layoutY="58.0" width="389.0" />
+   </children>
+</Pane>
