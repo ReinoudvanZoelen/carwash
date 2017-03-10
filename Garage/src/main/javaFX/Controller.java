@@ -23,7 +23,7 @@ public class Controller {
 
     @FXML
     public void buttonPressed(ActionEvent event) {
-        System.out.println("Button has been clicked.");
+        System.out.println("Button " + ((Button) event.getSource()).getText()+ " has been clicked.");
 
         _moveCar(event);
 
