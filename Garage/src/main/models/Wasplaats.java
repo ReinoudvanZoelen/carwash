@@ -13,4 +13,8 @@ public class Wasplaats {
         this.GeplaatsdeAuto = auto;
         this.Geplaatst = Time.valueOf(LocalTime.now());
     }
+
+    public Auto getAuto() {
+        return GeplaatsdeAuto;
+    }
 }
