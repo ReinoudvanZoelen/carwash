@@ -6,8 +6,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import main.models.Auto;
-import main.models.Garage;
-import main.persistance.AutoController;
+import main.persistance.auto.AutoController;
 import main.persistance.Database;
 
 public class Main extends Application {

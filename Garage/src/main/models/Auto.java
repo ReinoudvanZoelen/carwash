@@ -28,6 +28,7 @@ public class Auto {
     }
 
 
+    //region Getters & Setters
     public int getId() {
         return id;
     }
@@ -59,4 +60,5 @@ public class Auto {
     public void setWasTijd(int wasTijd) {
         this.wasTijd = wasTijd;
     }
+    //endregion
 }

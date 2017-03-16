@@ -1,4 +1,4 @@
-package main.persistance;
+package main.persistance.auto;
 
 import main.models.Auto;
 

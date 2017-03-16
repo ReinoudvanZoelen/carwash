@@ -1,27 +1,30 @@
-package main.javaFX;
+package main.controllers;
 
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.*;
 import main.models.Auto;
-import main.models.Garage;
 import main.models.Wasplaats;
+import main.persistance.wasplaats.WasplaatsLogic;
+
+import java.util.ArrayList;
 
 public class DrawingController {
 
     private Pane pane;
-    private Garage garage;
 
-    public DrawingController(Garage garage, Pane pane) {
+    public DrawingController(Pane pane) {
         this.pane = pane;
-        this.garage = garage;
     }
+
+    private WasplaatsLogic wasplaatsLogic = new WasplaatsLogic();
 
     //Method draws all cars in the Garage
     public void DrawGarage() {
         pane.getChildren().clear();
         System.out.println("Children of the drawing Pane have been wiped");
 
+        ArrayList<Wasplaats> wasplaatsen = wasplaatsLogic.GetAll();
 
         for (int x = 0; x < 3; x++) {
             System.out.println("Start For-iteration of DrawGarage number " + x);
@@ -35,16 +38,19 @@ public class DrawingController {
 
             // Check if the Wasplaats has a Car
 
-            if (garage.getWasplaatsen()[x].getAuto() != null) {
-                DrawCar(225 + (135 * x), 14 + 75, garage.getWasplaatsen()[x].getAuto());
-                System.out.println("Drawn wasplaats " + x + " with car " + garage.getWasplaatsen()[x].getAuto().getNaam());
-            } else {
-                System.out.println("No car was found in wasplaats" + x);
+            for (Wasplaats wasplaats : wasplaatsen
+                    ) {
+                if (wasplaats.getAuto() != null) {
+                    DrawCar(225 + (135 * x), 14 + 75, wasplaats.getAuto());
+                    System.out.println("Drawn wasplaats " + x + " with car " + wasplaats.getAuto().getNaam());
+                } else {
+                    System.out.println("No car was found in wasplaats with index " + x);
+                }
             }
         }
     }
 
-    public void DrawCar(int xPosition, int yPosition, Auto auto) {
+    private void DrawCar(int xPosition, int yPosition, Auto auto) {
         Ellipse roof = new Ellipse(xPosition + 60, yPosition, 35, 20);
         roof.setFill(Paint.valueOf("222D4A"));
 

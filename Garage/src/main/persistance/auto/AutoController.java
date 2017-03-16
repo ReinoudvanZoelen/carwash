@@ -1,4 +1,4 @@
-package main.persistance;
+package main.persistance.auto;
 
 import main.models.Auto;
 
@@ -8,8 +8,12 @@ public class AutoController implements IAutoRepository {
 
     private IAutoRepository repository;
 
-    public AutoController(){
+    public AutoController() {
         repository = new MySQLAutoRepository();
+    }
+
+    public void AssignToWasplaats(Auto auto, int wasplaatsID){
+        // TODO: Create a query that created an entry in the WasplaatsAuto table
     }
 
     @Override
@@ -19,21 +23,21 @@ public class AutoController implements IAutoRepository {
 
     @Override
     public ArrayList<Auto> GetAll() {
-        return null;
+        return repository.GetAll();
     }
 
     @Override
     public void insert(Auto auto) {
-
+        repository.insert(auto);
     }
 
     @Override
     public void update(Auto auto) {
-
+        repository.update(auto);
     }
 
     @Override
     public void delete(Auto auto) {
-
+        repository.delete(auto);
     }
 }
