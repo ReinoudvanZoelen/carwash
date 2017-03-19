@@ -1,8 +1,5 @@
 package main.models;
 
-/**
- * Created by Reino on 21-2-2017.
- */
 public class Auto {
     private int id;
     private String naam;

@@ -4,6 +4,7 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.*;
 import main.models.Auto;
+import main.models.Garage;
 import main.models.Wasplaats;
 import main.persistance.wasplaats.WasplaatsLogic;
 
@@ -20,11 +21,9 @@ public class DrawingController {
     private WasplaatsLogic wasplaatsLogic = new WasplaatsLogic();
 
     //Method draws all cars in the Garage
-    public void DrawGarage() {
+    public void DrawGarage(Garage garage) {
         pane.getChildren().clear();
         System.out.println("Children of the drawing Pane have been wiped");
-
-        ArrayList<Wasplaats> wasplaatsen = wasplaatsLogic.GetAll();
 
         for (int x = 0; x < 3; x++) {
             System.out.println("Start For-iteration of DrawGarage number " + x);
@@ -38,11 +37,11 @@ public class DrawingController {
 
             // Check if the Wasplaats has a Car
 
-            for (Wasplaats wasplaats : wasplaatsen
-                    ) {
-                if (wasplaats.getAuto() != null) {
-                    DrawCar(225 + (135 * x), 14 + 75, wasplaats.getAuto());
-                    System.out.println("Drawn wasplaats " + x + " with car " + wasplaats.getAuto().getNaam());
+            for (Auto auto : garage.wasplaatsen)
+            {
+                if (auto != null) {
+                    DrawCar(225 + (135 * x), 14 + 75, auto);
+                    System.out.println("Drawn wasplaats " + x + " with car " + auto.getNaam());
                 } else {
                     System.out.println("No car was found in wasplaats with index " + x);
                 }

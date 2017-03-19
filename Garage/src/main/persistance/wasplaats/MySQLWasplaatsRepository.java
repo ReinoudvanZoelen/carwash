@@ -1,10 +1,8 @@
 package main.persistance.wasplaats;
 
-import main.models.Auto;
 import main.models.Wasplaats;
 import main.persistance.Database;
 import main.persistance.auto.MySQLAutoRepository;
-
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -20,16 +18,16 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
 
         try {
             int id = result.getInt("id");
-            Auto auto = autoRepo.GetSingle(result.getInt(""))
             String type = result.getString("type");
-            if(result.getInt("previousWasplaatsId") > 0){
-                GetChild(id);
+            Wasplaats child = null;
+            if (result.getInt("previousWasplaatsId") == 0) {
+                child = GetChild(result.getInt("previousWasplaatsId"));
             }
-            Wasplaats verbondenwasplaats
+
+            wasplaats = new Wasplaats(id, type, child);
         } catch (SQLException exception) {
-
+            System.out.println(exception);
         }
-
         return wasplaats;
     }
 
@@ -56,7 +54,7 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
         return wasplaats;
     }
 
-    private Wasplaats GetChild(int parentId){
+    private Wasplaats GetChild(int parentId) {
         String sql = "Select * from wasplaats where previousWasplaatsID = ?";
         Wasplaats wasplaats = null;
 
@@ -67,7 +65,7 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                CreateObject(resultSet);
+                wasplaats = CreateObject(resultSet);
             }
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
@@ -80,12 +78,15 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
 
     @Override
     public ArrayList<Wasplaats> GetAll() {
+        // Haalt alle Wasplaatsen op die top-parent zijn en al ze een auto hebben wordt deze ook opgeslagen
+        // String sql = "Select * From wasplaats as WP left join wasplaatsauto as WPA on WP.id = WPA.wasplaatsID where WP.previousWasplaatsId is null";
+
         String sql = "Select * from wasplaats where previousWasplaatsId is null";
+
         ArrayList<Wasplaats> wasplaatsen = new ArrayList<>();
 
         try {
             PreparedStatement preparedStatement = Database.connect().prepareStatement(sql);
-
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {

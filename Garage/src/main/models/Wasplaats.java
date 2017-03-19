@@ -1,29 +1,25 @@
 package main.models;
 
-import java.sql.Time;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.util.*;
+import java.util.Date;
 
 public class Wasplaats {
     private int id;
-    private Auto GeplaatsdeAuto;
     private String type;
-    private Time Geplaatst;
     private Wasplaats verbondenWasplaats;
 
     public Wasplaats() {
     }
 
-    public Wasplaats(Auto auto, Wasplaats verbondenWasplaats) {
-        GeplaatsdeAuto = auto;
-        this.Geplaatst = Time.valueOf(LocalTime.now());
+    public Wasplaats(int id, String type, Auto auto, Date date, Wasplaats verbondenWasplaats) {
+        this.id = id;
+        this.type = type;
         this.verbondenWasplaats = verbondenWasplaats;
     }
 
-    public void plaatsAuto(Auto auto){
-        this.GeplaatsdeAuto = auto;
-        this.Geplaatst = Time.valueOf(LocalTime.now());
+    public Wasplaats(int id, String type, Wasplaats verbondenWasplaats) {
+        this.id = id;
+        this.type = type;
+        this.verbondenWasplaats = verbondenWasplaats;
     }
 
     //region Getters & Setters
@@ -35,28 +31,12 @@ public class Wasplaats {
         this.id = id;
     }
 
-    public Auto getGeplaatsdeAuto() {
-        return GeplaatsdeAuto;
-    }
-
-    public void setGeplaatsdeAuto(Auto geplaatsdeAuto) {
-        GeplaatsdeAuto = geplaatsdeAuto;
-    }
-
     public String getType() {
         return type;
     }
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public Time getGeplaatst() {
-        return Geplaatst;
-    }
-
-    public void setGeplaatst(Time geplaatst) {
-        Geplaatst = geplaatst;
     }
 
     public Wasplaats getVerbondenWasplaats() {

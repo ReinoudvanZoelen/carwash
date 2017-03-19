@@ -42,6 +42,29 @@ public class MySQLAutoRepository implements IAutoRepository {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
+                auto = CreateObject(resultSet);
+            }
+        } catch (SQLException ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            db.disconnect();
+        }
+
+        return auto;
+    }
+
+    @Override
+    public Auto GetSingleByWasplaatsId(int id) {
+        String sql = "Select * from autos inner join wasplaatsauto on wasplaatsauto.autoID = autos.ID where wasplaatsauto.wasplaatsID = ?";
+        Auto auto = null;
+
+        try {
+            PreparedStatement preparedStatement = Database.connect().prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            while (resultSet.next()) {
                 CreateObject(resultSet);
             }
         } catch (SQLException ex) {

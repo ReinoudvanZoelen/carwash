@@ -37,7 +37,7 @@ public class JavaFXController {
 
         lastPressed = (Button) event.getSource();
 
-        controller.moveCar();
+        controller.WasplaatsButtonClick();
     }
 
     public int GetLeftListIndex() {

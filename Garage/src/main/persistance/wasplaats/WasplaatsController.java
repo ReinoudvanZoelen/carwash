@@ -6,14 +6,16 @@ import java.util.ArrayList;
 
 public class WasplaatsController implements IWasplaatsRepository {
 
+    private IWasplaatsRepository context = new MySQLWasplaatsRepository();
+
     @Override
     public Wasplaats GetSingle(int id) {
-        return null;
+        return context.GetSingle(id);
     }
 
     @Override
     public ArrayList<Wasplaats> GetAll() {
-        return null;
+        return context.GetAll();
     }
 
     @Override

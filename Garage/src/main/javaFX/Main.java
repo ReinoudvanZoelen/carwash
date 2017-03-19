@@ -6,8 +6,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import main.models.Auto;
+import main.models.Garage;
+import main.models.Wasplaats;
 import main.persistance.auto.AutoController;
 import main.persistance.Database;
+import main.persistance.wasplaats.WasplaatsController;
+
+import java.util.ArrayList;
 
 public class Main extends Application {
 
@@ -17,22 +22,10 @@ public class Main extends Application {
         primaryStage.setTitle("JavaFX Wasstraat");
         primaryStage.setScene(new Scene(root, 840, 400));
         primaryStage.show();
-
-        // Testing the database functions
-        dbTest();
     }
 
     public static void main(String[] args) {
         launch(args);
-    }
-
-    private void dbTest() {
-        Database.connect();
-        AutoController ac = new AutoController();
-        Auto ab = ac.GetSingle(1);
-        if(ab != null){
-            System.out.println("Database test passed");
-        }
     }
 }
 

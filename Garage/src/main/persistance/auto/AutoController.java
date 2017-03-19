@@ -22,6 +22,11 @@ public class AutoController implements IAutoRepository {
     }
 
     @Override
+    public Auto GetSingleByWasplaatsId(int id) {
+        return repository.GetSingleByWasplaatsId(id);
+    }
+
+    @Override
     public ArrayList<Auto> GetAll() {
         return repository.GetAll();
     }
