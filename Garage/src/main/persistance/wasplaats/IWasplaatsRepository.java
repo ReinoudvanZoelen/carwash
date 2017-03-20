@@ -5,9 +5,9 @@ import main.models.Wasplaats;
 import java.util.ArrayList;
 
 interface IWasplaatsRepository {
-    public Wasplaats GetSingle(int id);
-    public ArrayList<Wasplaats> GetAll();
-    public void insert(Wasplaats wasplaats);
-    public void update(Wasplaats wasplaats);
-    public void delete(Wasplaats wasplaats);
+    Wasplaats GetSingle(int id);
+    ArrayList<Wasplaats> GetAll();
+    void insert(Wasplaats wasplaats);
+    void update(Wasplaats wasplaats);
+    void delete(Wasplaats wasplaats);
 }

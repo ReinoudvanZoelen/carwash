@@ -26,7 +26,8 @@ public class JavaFXController {
     @FXML
     private ListView WasplaatsLijst;
 
-    private Button lastPressed;
+    private Auto selectedAuto;
+    private Wasplaats selectedWasplaats;
 
     @FXML
     public void startPressed(ActionEvent event) {
@@ -34,12 +35,18 @@ public class JavaFXController {
     }
 
     @FXML
-    public void buttonPressed(ActionEvent event) {
-        System.out.println("Button " + ((Button) event.getSource()).getText() + " has been clicked.");
+    public void wasPressed(ActionEvent event) {
 
-        lastPressed = (Button) event.getSource();
+        selectedAuto = (Auto) AutoLijst.getSelectionModel().getSelectedItem();
+        selectedWasplaats = (Wasplaats) WasplaatsLijst.getSelectionModel().getSelectedItem();
 
-        controller.WasplaatsButtonClick();
+
+        if (selectedAuto == null || selectedWasplaats == null) {
+            System.out.println("Select both a car and a washing place");
+            return;
+        } else {
+            controller.AssignAutoClick(selectedAuto, selectedWasplaats);
+        }
     }
 
     public void RemoveAutoFromList() {

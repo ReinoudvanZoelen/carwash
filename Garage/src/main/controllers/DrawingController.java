@@ -48,7 +48,7 @@ public class DrawingController {
         }
     }
 
-    private void DrawCar(int xPosition, int yPosition, Auto auto) {
+    public void DrawCar(int xPosition, int yPosition, Auto auto) {
         Ellipse roof = new Ellipse(xPosition + 60, yPosition, 35, 20);
         roof.setFill(Paint.valueOf("222D4A"));
 

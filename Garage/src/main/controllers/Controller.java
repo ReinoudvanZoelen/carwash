@@ -15,27 +15,25 @@ public class Controller {
     private DrawingController draw;
     private TimingController time;
     private JavaFXController javaFx;
+    private DataLogicController data;
 
     public void start(JavaFXController javaFXController) {
         garage = new Garage();
         time = new TimingController(garage);
         javaFx = javaFXController;
         draw = new DrawingController(javaFx.getDrawPane());
+        data = new DataLogicController();
 
         // Fill all the lists with data
         javaFx.populateLists();
     }
 
-    public void WasplaatsButtonClick() {
-        if (GetSelectedAuto() == null) {
-            return;
-        }
+    public void AssignAutoClick(Auto auto, Wasplaats wasplaats) {
+        //data.Assign(auto, wasplaats);
 
-        javaFx.RemoveAutoFromList();
+        javaFx.populateLists();
 
-        AssignAutoToGarage();
-
-        draw.DrawGarage(garage);
+        draw.DrawCar(200, 200, auto);
 
         time = new TimingController(garage);
     }
