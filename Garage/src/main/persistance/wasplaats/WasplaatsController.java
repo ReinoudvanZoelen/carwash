@@ -20,16 +20,16 @@ public class WasplaatsController implements IWasplaatsRepository {
 
     @Override
     public void insert(Wasplaats wasplaats) {
-
+        context.insert(wasplaats);
     }
 
     @Override
     public void update(Wasplaats wasplaats) {
-
+        context.update(wasplaats);
     }
 
     @Override
     public void delete(Wasplaats wasplaats) {
-
+        context.update(wasplaats);
     }
 }

@@ -1,6 +1,7 @@
 package main.persistance.auto;
 
 import main.models.Auto;
+import main.models.Wasplaats;
 import main.persistance.Database;
 
 import java.sql.PreparedStatement;
@@ -8,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class MySQLAutoRepository implements IAutoRepository {
+class MySQLAutoRepository implements IAutoRepository {
 
     Database db = new Database();
 
@@ -96,6 +97,11 @@ public class MySQLAutoRepository implements IAutoRepository {
         }
 
         return autos;
+    }
+
+    @Override
+    public void assign(Auto auto, Wasplaats wasplaats) {
+        // TODO: Make method work
     }
 
     @Override

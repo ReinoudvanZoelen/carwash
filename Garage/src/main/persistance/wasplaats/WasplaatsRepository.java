@@ -4,37 +4,32 @@ import main.models.Wasplaats;
 
 import java.util.ArrayList;
 
-public class WasplaatsLogic implements IWasplaatsRepository {
-    public void AssignAutoToWasplaats(){
+class WasplaatsRepository implements IWasplaatsRepository {
 
-    }
-
-    public void RemoveAutoFromWasplaats(Wasplaats wasplaats){
-
-    }
+    private IWasplaatsRepository data = new WasplaatsController();
 
     @Override
     public Wasplaats GetSingle(int id) {
-        return null;
+        return data.GetSingle(id);
     }
 
     @Override
     public ArrayList<Wasplaats> GetAll() {
-        return null;
+        return data.GetAll();
     }
 
     @Override
     public void insert(Wasplaats wasplaats) {
-
+        data.insert(wasplaats);
     }
 
     @Override
     public void update(Wasplaats wasplaats) {
-
+        data.update(wasplaats);
     }
 
     @Override
     public void delete(Wasplaats wasplaats) {
-
+        data.delete(wasplaats);
     }
 }

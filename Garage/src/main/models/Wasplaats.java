@@ -22,6 +22,20 @@ public class Wasplaats {
         this.verbondenWasplaats = verbondenWasplaats;
     }
 
+    @Override
+    public String toString(){
+        String wasplaatsString = this.type;
+
+        Wasplaats wasplaatsTemp = this;
+
+        while(wasplaatsTemp.verbondenWasplaats != null){
+            wasplaatsString = wasplaatsString + ", " + wasplaatsTemp.verbondenWasplaats.type;
+            wasplaatsTemp = verbondenWasplaats;
+        }
+
+        return wasplaatsString;
+    }
+
     //region Getters & Setters
     public int getId() {
         return id;

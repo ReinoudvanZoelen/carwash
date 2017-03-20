@@ -4,7 +4,7 @@ import main.models.Wasplaats;
 
 import java.util.ArrayList;
 
-public interface IWasplaatsRepository {
+interface IWasplaatsRepository {
     public Wasplaats GetSingle(int id);
     public ArrayList<Wasplaats> GetAll();
     public void insert(Wasplaats wasplaats);

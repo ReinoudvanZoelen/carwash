@@ -2,16 +2,17 @@ package main.persistance.wasplaats;
 
 import main.models.Wasplaats;
 import main.persistance.Database;
-import main.persistance.auto.MySQLAutoRepository;
+import main.persistance.auto.AutoController;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class MySQLWasplaatsRepository implements IWasplaatsRepository {
+class MySQLWasplaatsRepository implements IWasplaatsRepository {
 
     Database db = new Database();
-    private MySQLAutoRepository autoRepo = new MySQLAutoRepository();
+    private AutoController autoRepo = new AutoController();
 
     private Wasplaats CreateObject(ResultSet result) {
         Wasplaats wasplaats = null;
@@ -19,10 +20,10 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
         try {
             int id = result.getInt("id");
             String type = result.getString("type");
-            Wasplaats child = null;
-            if (result.getInt("previousWasplaatsId") == 0) {
-                child = GetChild(result.getInt("previousWasplaatsId"));
-            }
+            Wasplaats child = GetChild(id);
+            //if (result.getInt("previousWasplaatsId") != 0) {
+            //    child = GetChild(result.getInt("previousWasplaatsId"));
+            //}
 
             wasplaats = new Wasplaats(id, type, child);
         } catch (SQLException exception) {
@@ -33,7 +34,7 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
 
     @Override
     public Wasplaats GetSingle(int id) {
-        String sql = "Select * from wasplaats where id = ?";
+        String sql = "SELECT * FROM wasplaats WHERE id = ?";
         Wasplaats wasplaats = null;
 
         try {
@@ -55,7 +56,7 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
     }
 
     private Wasplaats GetChild(int parentId) {
-        String sql = "Select * from wasplaats where previousWasplaatsID = ?";
+        String sql = "SELECT * FROM wasplaats WHERE previousWasplaatsID = ?";
         Wasplaats wasplaats = null;
 
         try {
@@ -81,7 +82,7 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
         // Haalt alle Wasplaatsen op die top-parent zijn en al ze een auto hebben wordt deze ook opgeslagen
         // String sql = "Select * From wasplaats as WP left join wasplaatsauto as WPA on WP.id = WPA.wasplaatsID where WP.previousWasplaatsId is null";
 
-        String sql = "Select * from wasplaats where previousWasplaatsId is null";
+        String sql = "SELECT * FROM wasplaats WHERE previousWasplaatsId IS NULL";
 
         ArrayList<Wasplaats> wasplaatsen = new ArrayList<>();
 
@@ -103,7 +104,7 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
 
     @Override
     public void insert(Wasplaats wasplaats) {
-        String sql = "Insert into wasplaats(type, previousWasplaatsId)values(?,?)";
+        String sql = "INSERT INTO wasplaats(type, previousWasplaatsId)VALUES(?,?)";
 
         try {
             PreparedStatement ex = db.connect().prepareStatement(sql);
@@ -119,7 +120,7 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
 
     @Override
     public void update(Wasplaats wasplaats) {
-        String sql = "Update wasplaats set type = ?, previousWasplaatsId = ?) where id = ?";
+        String sql = "UPDATE wasplaats SET type = ?, previousWasplaatsId = ?) WHERE id = ?";
 
         try {
             PreparedStatement ex = db.connect().prepareStatement(sql);
@@ -136,7 +137,7 @@ public class MySQLWasplaatsRepository implements IWasplaatsRepository {
 
     @Override
     public void delete(Wasplaats wasplaats) {
-        String sql = "Delete from wasplaats where id = ?";
+        String sql = "DELETE FROM wasplaats WHERE id = ?";
 
         try {
             PreparedStatement ex = db.connect().prepareStatement(sql);

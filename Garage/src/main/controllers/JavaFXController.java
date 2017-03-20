@@ -6,9 +6,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.Pane;
 import main.models.Auto;
+import main.models.Wasplaats;
 import main.persistance.auto.AutoController;
-
-import java.util.ArrayList;
+import main.persistance.wasplaats.WasplaatsController;
 
 // GOAL OF THE CLASS IS TO PASS INPUT TO THE CONTROLLER
 // AND TO MODIFY THINGS ON THE JAVAFX PANEL
@@ -16,13 +16,15 @@ import java.util.ArrayList;
 public class JavaFXController {
 
     private Controller controller = new Controller();
+    private AutoController autoController = new AutoController();
+    private WasplaatsController wasplaatsController = new WasplaatsController();
 
     @FXML
     private Pane drawPane;
     @FXML
-    private ListView viezeAutoLijst;
+    private ListView AutoLijst;
     @FXML
-    private ListView schoneAutoLijst;
+    private ListView WasplaatsLijst;
 
     private Button lastPressed;
 
@@ -40,44 +42,41 @@ public class JavaFXController {
         controller.WasplaatsButtonClick();
     }
 
-    public int GetLeftListIndex() {
-        return viezeAutoLijst.getSelectionModel().getSelectedIndex();
+    public void RemoveAutoFromList() {
+        AutoLijst.getItems().remove(GetAutolistIndex());
     }
 
-    public int GetLeftListID() {
-        return ((Auto) viezeAutoLijst.getSelectionModel().getSelectedItem()).getId();
+    public void populateLists() {
+        AutoLijst.getItems().clear();
+        WasplaatsLijst.getItems().clear();
+
+        for (Auto auto : autoController.GetAll()) {
+            AutoLijst.getItems().add(auto);
+        }
+        for (Wasplaats wasplaats : wasplaatsController.GetAll()) {
+            WasplaatsLijst.getItems().add(wasplaats);
+        }
     }
 
-    public void RemoveSelectedItemFromLeftList() {
-        viezeAutoLijst.getItems().remove(GetLeftListIndex());
+    //region Getters & Setters
+    public int GetAutolistIndex() {
+        return AutoLijst.getSelectionModel().getSelectedIndex();
+    }
+
+    public int GetAutoID() {
+        return ((Auto) AutoLijst.getSelectionModel().getSelectedItem()).getId();
+    }
+
+    public int GetWasplaatslistIndex() {
+        return WasplaatsLijst.getSelectionModel().getSelectedIndex();
+    }
+
+    public int GetWasplaatsID() {
+        return ((Wasplaats) WasplaatsLijst.getSelectionModel().getSelectedItem()).getId();
     }
 
     public Pane getDrawPane() {
         return drawPane;
     }
-
-    public String GetButtonText() {
-        if (lastPressed != null) {
-            return lastPressed.getText();
-        } else
-            System.out.println("GetButtonText was not performed correctly. A button should have been clicked, but wasn't");
-        return null;
-    }
-
-    public void populateLists(ArrayList<Auto> autos) {
-        schoneAutoLijst.getItems().clear();
-        viezeAutoLijst.getItems().clear();
-        System.out.println("Left and Right listboxes have been cleared");
-
-        // TODO Een auto kan ook in een wasstraat staan, moet ik een beetje creatief met queries oplossen
-        for (Auto auto : autos) {
-            if (auto.isVies() == true) {
-                viezeAutoLijst.getItems().add(auto);
-                System.out.println("Auto " + auto.getNaam() + " has been added to the left list");
-            } else {
-                schoneAutoLijst.getItems().add(auto);
-                System.out.println("Auto " + auto.getNaam() + " has been added to the right list");
-            }
-        }
-    }
+    //endregion
 }

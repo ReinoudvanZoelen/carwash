@@ -1,6 +1,7 @@
 package main.persistance.auto;
 
 import main.models.Auto;
+import main.models.Wasplaats;
 
 import java.util.ArrayList;
 
@@ -29,6 +30,11 @@ public class AutoController implements IAutoRepository {
     @Override
     public ArrayList<Auto> GetAll() {
         return repository.GetAll();
+    }
+
+    @Override
+    public void assign(Auto auto, Wasplaats wasplaats) {
+        repository.assign(auto, wasplaats);
     }
 
     @Override

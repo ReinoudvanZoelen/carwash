@@ -37,88 +37,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
+      <file leaf-file-name="WasplaatsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutoController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/AutoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="247">
+              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding>
-                <element signature="e#517#518#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MySQLAutoRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/MySQLAutoRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-              <folding>
-                <marker date="1489955203957" expanded="true" signature="880:912" ph="Select * fro... autos" />
-                <marker date="1489955203957" expanded="true" signature="1522:1601" ph="Select * fro... autos" />
-                <marker date="1489955203957" expanded="true" signature="1522:1635" ph="Select * fro... autos" />
-                <marker date="1489955203957" expanded="true" signature="1522:1637" ph="Select * fro... autos" />
-                <marker date="1489955203957" expanded="true" signature="2229:2248" ph="Select * fro... autos" />
-                <marker date="1489955203957" expanded="true" signature="2830:2881" ph="Insert into autos... " />
-                <marker date="1489955203957" expanded="true" signature="3349:3410" ph="Update autos... " />
-                <marker date="1489955203957" expanded="true" signature="3918:3948" ph="Delete from " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JavaFXController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JavaFXController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/controllers/JavaFXController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+            <state relative-caret-position="619">
+              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
-                <element signature="e#1183#1184#0" expanded="true" />
-                <element signature="e#1275#1276#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="n#!!doc;n#GetAutolistIndex#0;n#JavaFXController#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sample.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/javaFX/sample.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
+      <file leaf-file-name="MySQLWasplaatsRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="428">
+              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1490042780129" expanded="true" signature="1089:1125" ph="Select * fro... wasplaats" />
+                <marker date="1490042780129" expanded="true" signature="1112:1125" ph="Select * fro... wasplaats" />
+                <marker date="1490042780129" expanded="true" signature="1727:1780" ph="Select * fro... wasplaats" />
+                <marker date="1490042780129" expanded="true" signature="1750:1780" ph="Select * fro... wasplaats" />
+                <marker date="1490042780129" expanded="true" signature="2521:2645" ph="Select * fro... wasplaats" />
+                <marker date="1490042780129" expanded="true" signature="2671:2728" ph="Select * fro... wasplaats" />
+                <marker date="1490042780129" expanded="true" signature="3343:3402" ph="Insert into wasplaats... " />
+                <marker date="1490042780129" expanded="true" signature="3864:3932" ph="Update waspl... " />
+                <marker date="1490042780129" expanded="true" signature="4439:4473" ph="Delete from " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListView.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/ListView.java">
+      <file leaf-file-name="ResultSetImpl.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.41-bin.jar!/com/mysql/jdbc/ResultSetImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="458" column="0" lean-forward="false" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ObjectPropertyBase.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/beans/property/ObjectPropertyBase.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="1351" column="0" lean-forward="false" selection-start-line="1351" selection-start-column="0" selection-end-line="1351" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -144,12 +113,17 @@
       <find>InputController</find>
       <find>ecx</find>
       <find>repository</find>
+      <find>RemoveSelectedItemFromLeftList</find>
+      <find>WasplaatsLogic</find>
+      <find>wasplaatsLogic</find>
     </findStrings>
     <replaceStrings>
       <replace>InputController</replace>
       <replace>Controller</replace>
       <replace>JavaFXController</replace>
       <replace>context</replace>
+      <replace>WasplaatsRepository</replace>
+      <replace>wasplaatsController</replace>
     </replaceStrings>
   </component>
   <component name="GradleLocalSettings">
@@ -169,25 +143,27 @@
         <option value="$PROJECT_DIR$/src/main/javaFX/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/IAutoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/AutoController.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/IWasplaatsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/logic/AutoWasstraatLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/auto/AutoLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsLogic.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/auto/IAutoRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsController.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/auto/AutoController.java" />
-        <option value="$PROJECT_DIR$/src/main/models/Wasplaats.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/javaFX/Main.java" />
         <option value="$PROJECT_DIR$/src/main/models/Auto.java" />
         <option value="$PROJECT_DIR$/src/main/models/Garage.java" />
-        <option value="$PROJECT_DIR$/src/main/controllers/TimingController.java" />
-        <option value="$PROJECT_DIR$/src/main/controllers/DrawingController.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/auto/MySQLAutoRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/javaFX/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/main/persistance/auto/AutoLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/controllers/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/IWasplaatsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/auto/MySQLAutoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsController.java" />
         <option value="$PROJECT_DIR$/src/main/controllers/JavaFXController.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/auto/AutoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/auto/AutoController.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/auto/IAutoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/controllers/DrawingController.java" />
+        <option value="$PROJECT_DIR$/src/main/controllers/TimingController.java" />
+        <option value="$PROJECT_DIR$/src/main/models/Wasplaats.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java" />
       </list>
     </option>
   </component>
@@ -218,9 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -411,6 +384,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,7 +396,7 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-5.1.41-bin.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/RMTS/rmts-api" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -868,11 +844,14 @@
       <workItem from="1489919082917" duration="15411000" />
       <workItem from="1489952730963" duration="672000" />
       <workItem from="1489953748260" duration="3135000" />
+      <workItem from="1489957555078" duration="2346000" />
+      <workItem from="1489994992928" duration="1190000" />
+      <workItem from="1490039850089" duration="3192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80631000" />
+    <option name="totallyTimeSpent" value="87359000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -885,7 +864,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -902,13 +881,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21930295" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21930295" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921588" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46005362" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="-297" y="168" width="1405" height="845" />
+      <window_info id="Debug" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44235924" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" x="-297" y="168" width="1405" height="845" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -921,7 +900,7 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -976,18 +955,30 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/controllers/DrawingController.java</url>
-          <line>39</line>
+          <line>38</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/controllers/Controller.java</url>
-          <line>51</line>
+          <url>file://$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java</url>
+          <line>101</line>
           <properties />
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java</url>
+          <line>62</line>
+          <properties />
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -996,26 +987,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/javaFX/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/models/Voertuig.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/com/sun/glass/ui/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1151,13 +1122,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/javaFX/InputController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/IWasplaatsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/main.logic.AutoWasstraatLogic">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -1177,20 +1141,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/logic/AutoWasstraatLogic.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/AutoLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/EventObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="127">
@@ -1205,58 +1155,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/IAutoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
           <caret line="744" column="0" lean-forward="false" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.41-bin.jar!/com/mysql/jdbc/ResultSetImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="559" column="0" lean-forward="false" selection-start-line="559" selection-start-column="0" selection-end-line="559" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/models/Wasplaats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="4" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="92" column="56" lean-forward="false" selection-start-line="92" selection-start-column="56" selection-end-line="92" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1489932300891" expanded="true" signature="1096:1132" ph="Select * fro... wasplaats" />
-            <marker date="1489932300891" expanded="true" signature="1119:1132" ph="Select * fro... wasplaats" />
-            <marker date="1489932300891" expanded="true" signature="1734:1787" ph="Select * fro... wasplaats" />
-            <marker date="1489932300891" expanded="true" signature="1757:1787" ph="Select * fro... wasplaats" />
-            <marker date="1489932300891" expanded="true" signature="2528:2652" ph="Select * fro... wasplaats" />
-            <marker date="1489932300891" expanded="true" signature="2678:2735" ph="Select * fro... wasplaats" />
-            <marker date="1489932300891" expanded="true" signature="3350:3409" ph="Insert into wasplaats... " />
-            <marker date="1489932300891" expanded="true" signature="3871:3939" ph="Update waspl... " />
-            <marker date="1489932300891" expanded="true" signature="4446:4480" ph="Delete from " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,14 +1166,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="32" lean-forward="true" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/models/Auto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1292,24 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="1692" column="25" lean-forward="false" selection-start-line="1692" selection-start-column="25" selection-end-line="1692" selection-end-column="25" />
-          <folding>
-            <element signature="e#3205#3216#0" expanded="false" />
-            <element signature="e#3306#3317#0" expanded="false" />
-            <element signature="e#3405#3416#0" expanded="false" />
-            <element signature="e#3508#3525#0" expanded="false" />
-            <element signature="e#4334#4364#0" expanded="false" />
-            <element signature="e#6543#6573#0" expanded="false" />
-            <element signature="e#10128#10158#0" expanded="false" />
-            <element signature="e#32990#33020#0" expanded="false" />
-            <element signature="e#37362#37392#0" expanded="false" />
-            <element signature="e#44464#44480#0" expanded="false" />
-            <element signature="e#68506#68536#0" expanded="false" />
-            <element signature="e#71768#71776#0" expanded="false" />
-            <element signature="e#71835#71853#0" expanded="false" />
-            <element signature="e#82444#82474#0" expanded="false" />
-            <element signature="e#83816#83846#0" expanded="false" />
-            <element signature="e#89605#89650#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1321,62 +1197,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/DrawingController.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/ListView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/TimingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="19">
+          <caret line="458" column="0" lean-forward="false" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/beans/property/ObjectPropertyBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
+        <state relative-caret-position="19">
           <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/scene/control/ListView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="458" column="0" lean-forward="false" selection-start-line="458" selection-start-column="0" selection-end-line="458" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/AutoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#517#518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/MySQLAutoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-          <folding>
-            <marker date="1489955203957" expanded="true" signature="880:912" ph="Select * fro... autos" />
-            <marker date="1489955203957" expanded="true" signature="1522:1601" ph="Select * fro... autos" />
-            <marker date="1489955203957" expanded="true" signature="1522:1635" ph="Select * fro... autos" />
-            <marker date="1489955203957" expanded="true" signature="1522:1637" ph="Select * fro... autos" />
-            <marker date="1489955203957" expanded="true" signature="2229:2248" ph="Select * fro... autos" />
-            <marker date="1489955203957" expanded="true" signature="2830:2881" ph="Insert into autos... " />
-            <marker date="1489955203957" expanded="true" signature="3349:3410" ph="Update autos... " />
-            <marker date="1489955203957" expanded="true" signature="3918:3948" ph="Delete from " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1385,28 +1216,200 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="323">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/JavaFXController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/IWasplaatsRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="39" column="42" lean-forward="false" selection-start-line="39" selection-start-column="42" selection-end-line="39" selection-end-column="42" />
+        <state relative-caret-position="76">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#1183#1184#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/MySQLAutoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="103" column="33" lean-forward="false" selection-start-line="103" selection-start-column="33" selection-end-line="103" selection-end-column="33" />
+          <folding>
+            <marker date="1489995861900" expanded="true" signature="903:935" ph="Select * fro... autos" />
+            <marker date="1489995861900" expanded="true" signature="1545:1624" ph="Select * fro... autos" />
+            <marker date="1489995861900" expanded="true" signature="1545:1658" ph="Select * fro... autos" />
+            <marker date="1489995861900" expanded="true" signature="1545:1660" ph="Select * fro... autos" />
+            <marker date="1489995861900" expanded="true" signature="2252:2271" ph="Select * fro... autos" />
+            <marker date="1489995861900" expanded="true" signature="2965:3016" ph="Insert into autos... " />
+            <marker date="1489995861900" expanded="true" signature="3484:3545" ph="Update autos... " />
+            <marker date="1489995861900" expanded="true" signature="4053:4083" ph="Delete from " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
+        <state relative-caret-position="114">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="method#GetSelectedAuto#0;class#Controller#0" expanded="false" />
+            <element signature="method#GetSelectedWasplaats#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/AutoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/IAutoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/AutoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/TimingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-184">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#684#685#0" expanded="false" />
+            <element signature="e#716#717#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/DrawingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-152">
+          <caret line="19" column="72" lean-forward="false" selection-start-line="19" selection-start-column="72" selection-end-line="19" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/models/Auto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-304">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/models/Wasplaats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.41-bin.jar!/com/mysql/jdbc/Field.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="460" column="0" lean-forward="false" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
+          <folding>
+            <element signature="e#18550#18551#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.41-bin.jar!/com/mysql/jdbc/ByteArrayRow.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.41-bin.jar!/com/mysql/jdbc/ConnectionImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="242" column="0" lean-forward="false" selection-start-line="242" selection-start-column="0" selection-end-line="242" selection-end-column="0" />
+          <folding>
+            <element signature="e#9435#9436#0" expanded="true" />
+            <element signature="e#9511#9512#0" expanded="true" />
+            <element signature="e#9867#9868#0" expanded="true" />
+            <marker date="1487104078000" expanded="true" signature="88443:88472" ph="SELECT @@ses... " />
+            <marker date="1487104078000" expanded="true" signature="101988:102015" ph="SELECT @@ses... " />
+            <marker date="1487104078000" expanded="true" signature="104472:104501" ph="select @@ses... " />
+            <marker date="1487104078000" expanded="true" signature="111602:111617" ph="/* missingVa... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/mysql-connector-java-5.1.41-bin.jar!/com/mysql/jdbc/ResultSetImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="1351" column="0" lean-forward="false" selection-start-line="1351" selection-start-column="0" selection-end-line="1351" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1490042780129" expanded="true" signature="1089:1125" ph="Select * fro... wasplaats" />
+            <marker date="1490042780129" expanded="true" signature="1112:1125" ph="Select * fro... wasplaats" />
+            <marker date="1490042780129" expanded="true" signature="1727:1780" ph="Select * fro... wasplaats" />
+            <marker date="1490042780129" expanded="true" signature="1750:1780" ph="Select * fro... wasplaats" />
+            <marker date="1490042780129" expanded="true" signature="2521:2645" ph="Select * fro... wasplaats" />
+            <marker date="1490042780129" expanded="true" signature="2671:2728" ph="Select * fro... wasplaats" />
+            <marker date="1490042780129" expanded="true" signature="3343:3402" ph="Insert into wasplaats... " />
+            <marker date="1490042780129" expanded="true" signature="3864:3932" ph="Update waspl... " />
+            <marker date="1490042780129" expanded="true" signature="4439:4473" ph="Delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#435#436#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/JavaFXController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="n#!!doc;n#GetAutolistIndex#0;n#JavaFXController#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

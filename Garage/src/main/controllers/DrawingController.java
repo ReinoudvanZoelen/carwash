@@ -5,8 +5,7 @@ import javafx.scene.paint.Paint;
 import javafx.scene.shape.*;
 import main.models.Auto;
 import main.models.Garage;
-import main.models.Wasplaats;
-import main.persistance.wasplaats.WasplaatsLogic;
+import main.persistance.wasplaats.WasplaatsController;
 
 import java.util.ArrayList;
 
@@ -18,7 +17,7 @@ public class DrawingController {
         this.pane = pane;
     }
 
-    private WasplaatsLogic wasplaatsLogic = new WasplaatsLogic();
+    private WasplaatsController wasplaatsLogic = new WasplaatsController();
 
     //Method draws all cars in the Garage
     public void DrawGarage(Garage garage) {

@@ -2,10 +2,8 @@ package main.controllers;
 
 import main.models.Auto;
 import main.models.Garage;
-import main.models.Wasplaats;
-import main.persistance.wasplaats.WasplaatsLogic;
+import main.persistance.wasplaats.WasplaatsController;
 
-import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -23,7 +21,7 @@ public class TimingController {
 
 class TimerCarWash extends TimerTask {
 
-    private WasplaatsLogic wasplaatsLogic = new WasplaatsLogic();
+    private WasplaatsController wasplaatsController = new WasplaatsController();
 
     private Auto auto;
 
@@ -32,7 +30,7 @@ class TimerCarWash extends TimerTask {
     }
 
     public void run() {
-        //wasplaatsLogic.RemoveAutoFromWasplaats(auto);
+        //wasplaatsController.RemoveAutoFromWasplaats(auto);
         // TODO nu moet de pagina opnieuw worden getekend anders merkt niemand dat de auto weg is
     }
 }
