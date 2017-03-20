@@ -7,15 +7,7 @@ import java.util.ArrayList;
 
 public class AutoController implements IAutoRepository {
 
-    private IAutoRepository repository;
-
-    public AutoController() {
-        repository = new MySQLAutoRepository();
-    }
-
-    public void AssignToWasplaats(Auto auto, int wasplaatsID){
-        // TODO: Create a query that created an entry in the WasplaatsAuto table
-    }
+    private IAutoRepository repository = new MySQLAutoRepository();
 
     @Override
     public Auto GetSingle(int id) {
@@ -33,14 +25,7 @@ public class AutoController implements IAutoRepository {
     }
 
     @Override
-    public void assign(Auto auto, Wasplaats wasplaats) {
-        repository.assign(auto, wasplaats);
-    }
-
-    @Override
-    public void insert(Auto auto) {
-        repository.insert(auto);
-    }
+    public void insert(Auto auto) { repository.insert(auto); }
 
     @Override
     public void update(Auto auto) {

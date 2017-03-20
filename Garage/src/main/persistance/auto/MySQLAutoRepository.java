@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 class MySQLAutoRepository implements IAutoRepository {
 
-    Database db = new Database();
+    private Database db = new Database();
 
     private Auto CreateObject(ResultSet result) {
         Auto auto = null;
@@ -45,7 +45,7 @@ class MySQLAutoRepository implements IAutoRepository {
             while (resultSet.next()) {
                 auto = CreateObject(resultSet);
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
         } finally {
             db.disconnect();
@@ -66,9 +66,9 @@ class MySQLAutoRepository implements IAutoRepository {
             ResultSet resultSet = preparedStatement.executeQuery();
 
             while (resultSet.next()) {
-                CreateObject(resultSet);
+                auto = CreateObject(resultSet);
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
         } finally {
             db.disconnect();
@@ -90,7 +90,7 @@ class MySQLAutoRepository implements IAutoRepository {
             while (resultSet.next()) {
                 autos.add(CreateObject(resultSet));
             }
-        } catch (SQLException ex) {
+        } catch (Exception ex) {
             System.out.println(ex.getMessage());
         } finally {
             db.disconnect();
@@ -100,21 +100,16 @@ class MySQLAutoRepository implements IAutoRepository {
     }
 
     @Override
-    public void assign(Auto auto, Wasplaats wasplaats) {
-        // TODO: Make method work
-    }
-
-    @Override
     public void insert(Auto auto) {
         String sql = "Insert into autos(naam, vies, wasTijd)values(?,?,?)";
 
         try {
-            PreparedStatement ex = db.connect().prepareStatement(sql);
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
             ex.setString(1, auto.getNaam());
             ex.setBoolean(2, auto.isVies());
             ex.setInt(3, auto.getWasTijd());
             ex.executeUpdate();
-        } catch (SQLException var7) {
+        } catch (Exception var7) {
             var7.printStackTrace();
         } finally {
             db.disconnect();
@@ -126,13 +121,13 @@ class MySQLAutoRepository implements IAutoRepository {
         String sql = "Update autos set naam = ?, vies = ?, wasTijd = ? where id = ?";
 
         try {
-            PreparedStatement ex = db.connect().prepareStatement(sql);
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
             ex.setString(1, auto.getNaam());
             ex.setBoolean(2, auto.isVies());
             ex.setInt(3, auto.getWasTijd());
             ex.setInt(4, auto.getId());
             ex.executeUpdate();
-        } catch (SQLException var7) {
+        } catch (Exception var7) {
             var7.printStackTrace();
         } finally {
             db.disconnect();
@@ -144,10 +139,10 @@ class MySQLAutoRepository implements IAutoRepository {
         String sql = "Delete from autos where id = ?";
 
         try {
-            PreparedStatement ex = db.connect().prepareStatement(sql);
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
             ex.setInt(1, auto.getId());
             ex.executeUpdate();
-        } catch (SQLException var7) {
+        } catch (Exception var7) {
             var7.printStackTrace();
         } finally {
             db.disconnect();
