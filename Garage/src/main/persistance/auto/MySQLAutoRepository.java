@@ -1,7 +1,6 @@
 package main.persistance.auto;
 
 import main.models.Auto;
-import main.models.Wasplaats;
 import main.persistance.Database;
 
 import java.sql.PreparedStatement;
@@ -11,20 +10,17 @@ import java.util.ArrayList;
 
 class MySQLAutoRepository implements IAutoRepository {
 
-    private Database db = new Database();
-
     private Auto CreateObject(ResultSet result) {
         Auto auto = null;
 
-        try{
+        try {
             String naam = result.getString("naam");
             Boolean vies = result.getBoolean("vies");
             int wasTijd = result.getInt("wasTijd");
             int backId = result.getInt("id");
 
             auto = new Auto(backId, naam, vies, wasTijd);
-        }
-        catch(SQLException exception){
+        } catch (SQLException exception) {
             System.out.println(exception.getMessage());
         }
 
@@ -33,14 +29,14 @@ class MySQLAutoRepository implements IAutoRepository {
 
     @Override
     public Auto GetSingle(int id) {
-        String sql = "Select * from autos where id = ?";
+        String sql = "SELECT * FROM autos WHERE id = ?";
         Auto auto = null;
 
         try {
-            PreparedStatement preparedStatement = Database.connect().prepareStatement(sql);
-            preparedStatement.setInt(1, id);
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
+            ex.setInt(1, id);
 
-            ResultSet resultSet = preparedStatement.executeQuery();
+            ResultSet resultSet = ex.executeQuery();
 
             while (resultSet.next()) {
                 auto = CreateObject(resultSet);
@@ -48,7 +44,7 @@ class MySQLAutoRepository implements IAutoRepository {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
 
         return auto;
@@ -56,14 +52,14 @@ class MySQLAutoRepository implements IAutoRepository {
 
     @Override
     public Auto GetSingleByWasplaatsId(int id) {
-        String sql = "Select * from autos inner join wasplaatsauto on wasplaatsauto.autoID = autos.ID where wasplaatsauto.wasplaatsID = ?";
+        String sql = "SELECT * FROM autos INNER JOIN wasplaatsauto ON wasplaatsauto.autoID = autos.ID WHERE wasplaatsauto.wasplaatsID = ?";
         Auto auto = null;
 
         try {
-            PreparedStatement preparedStatement = Database.connect().prepareStatement(sql);
-            preparedStatement.setInt(1, id);
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
+            ex.setInt(1, id);
 
-            ResultSet resultSet = preparedStatement.executeQuery();
+            ResultSet resultSet = ex.executeQuery();
 
             while (resultSet.next()) {
                 auto = CreateObject(resultSet);
@@ -71,7 +67,7 @@ class MySQLAutoRepository implements IAutoRepository {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
 
         return auto;
@@ -79,13 +75,13 @@ class MySQLAutoRepository implements IAutoRepository {
 
     @Override
     public ArrayList<Auto> GetAll() {
-        String sql = "Select * from autos";
+        String sql = "SELECT * FROM autos";
         ArrayList<Auto> autos = new ArrayList<>();
 
         try {
-            PreparedStatement preparedStatement = Database.connect().prepareStatement(sql);
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
 
-            ResultSet resultSet = preparedStatement.executeQuery();
+            ResultSet resultSet = ex.executeQuery();
 
             while (resultSet.next()) {
                 autos.add(CreateObject(resultSet));
@@ -93,7 +89,35 @@ class MySQLAutoRepository implements IAutoRepository {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         } finally {
-            db.disconnect();
+            Database.disconnect();
+        }
+
+        return autos;
+    }
+
+    @Override
+    public ArrayList<Auto> GetAll(boolean washed) {
+        String sql = "";
+        if (washed == true) {
+            sql = "SELECT * FROM autos AS A inner join wasplaatsauto as WA on WA.autoID = A.id";
+        } else {
+            sql = "Select * from autos where (SELECT COUNT(*) FROM wasplaatsauto where autoID = autos.id) = 0";
+        }
+
+        ArrayList<Auto> autos = new ArrayList<>();
+
+        try {
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
+
+            ResultSet resultSet = ex.executeQuery();
+
+            while (resultSet.next()) {
+                autos.add(CreateObject(resultSet));
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
+        } finally {
+            Database.disconnect();
         }
 
         return autos;
@@ -101,7 +125,7 @@ class MySQLAutoRepository implements IAutoRepository {
 
     @Override
     public void insert(Auto auto) {
-        String sql = "Insert into autos(naam, vies, wasTijd)values(?,?,?)";
+        String sql = "INSERT INTO autos(naam, vies, wasTijd)VALUES(?,?,?)";
 
         try {
             PreparedStatement ex = Database.connect().prepareStatement(sql);
@@ -112,13 +136,13 @@ class MySQLAutoRepository implements IAutoRepository {
         } catch (Exception var7) {
             var7.printStackTrace();
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
     }
 
     @Override
     public void update(Auto auto) {
-        String sql = "Update autos set naam = ?, vies = ?, wasTijd = ? where id = ?";
+        String sql = "UPDATE autos SET naam = ?, vies = ?, wasTijd = ? WHERE id = ?";
 
         try {
             PreparedStatement ex = Database.connect().prepareStatement(sql);
@@ -130,13 +154,13 @@ class MySQLAutoRepository implements IAutoRepository {
         } catch (Exception var7) {
             var7.printStackTrace();
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
     }
 
     @Override
     public void delete(Auto auto) {
-        String sql = "Delete from autos where id = ?";
+        String sql = "DELETE FROM autos WHERE id = ?";
 
         try {
             PreparedStatement ex = Database.connect().prepareStatement(sql);
@@ -145,11 +169,11 @@ class MySQLAutoRepository implements IAutoRepository {
         } catch (Exception var7) {
             var7.printStackTrace();
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
     }
 
-    public Auto GetLastByWasplaatsID(int id){
+    public Auto GetLastByWasplaatsID(int id) {
         return null; // TODO
     }
 }

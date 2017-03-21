@@ -9,6 +9,7 @@ interface IAutoRepository {
     Auto GetSingle(int id);
     Auto GetSingleByWasplaatsId(int id);
     ArrayList<Auto> GetAll();
+    ArrayList<Auto> GetAll(boolean washed);
     void insert(Auto auto);
     void update (Auto auto);
     void delete (Auto auto);

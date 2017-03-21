@@ -25,6 +25,11 @@ public class AutoController implements IAutoRepository {
     }
 
     @Override
+    public ArrayList<Auto> GetAll(boolean washed) {
+        return repository.GetAll(washed);
+    }
+
+    @Override
     public void insert(Auto auto) { repository.insert(auto); }
 
     @Override
