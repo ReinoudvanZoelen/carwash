@@ -1,8 +1,9 @@
 package main.models;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Wasplaats {
+public class Wasplaats implements Serializable {
     private int id;
     private String type;
     private Wasplaats verbondenWasplaats;
