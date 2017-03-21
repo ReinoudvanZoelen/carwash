@@ -4,51 +4,49 @@ import javafx.scene.layout.Pane;
 import javafx.scene.paint.Paint;
 import javafx.scene.shape.*;
 import main.models.Auto;
-import main.models.Garage;
-import main.persistance.wasplaats.WasplaatsController;
+import main.persistance.auto.AutoController;
 
-import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class DrawingController {
 
     private Pane pane;
+    private AutoController autoService = new AutoController();
 
     public DrawingController(Pane pane) {
         this.pane = pane;
     }
 
-    private WasplaatsController wasplaatsLogic = new WasplaatsController();
-
     //Method draws all cars in the Garage
-    public void DrawGarage(Garage garage) {
+    public void Draw() {
         pane.getChildren().clear();
-        System.out.println("Children of the drawing Pane have been wiped");
+        //System.out.println("Children of the drawing Pane have been wiped");
 
-        for (int x = 0; x < 3; x++) {
-            System.out.println("Start For-iteration of DrawGarage number " + x);
+        int minX = 5;
+        int maxX = 410 - 120 - 5;
 
-            // start X: 225
-            // start Y: 14
-            // Position: top left
+        int randomnumberX;
 
-            // centerX: sX + difference between buttons * x = starting position
-            // centerY: sY + 25 (button height) + 50 extra height
+        int minY = 5;
+        int maxY = 326 - 40 - 5;
 
-            // Check if the Wasplaats has a Car
+        int randomnumberY;
 
-            for (Auto auto : garage.wasplaatsen)
-            {
-                if (auto != null) {
-                    DrawCar(225 + (135 * x), 14 + 75, auto);
-                    System.out.println("Drawn wasplaats " + x + " with car " + auto.getNaam());
-                } else {
-                    System.out.println("No car was found in wasplaats with index " + x);
-                }
-            }
+
+        // For every car that is currently connected to a wasplaats
+        for (Auto auto : autoService.GetAll(true)) {
+            randomnumberX = ThreadLocalRandom.current().nextInt(minX, maxX + 1);
+            randomnumberY = ThreadLocalRandom.current().nextInt(minY, maxY + 1);
+
+            DrawCar(randomnumberX, randomnumberY, null);
         }
+
     }
 
-    public void DrawCar(int xPosition, int yPosition, Auto auto) {
+    private void DrawCar(int xPosition, int yPosition, Auto auto) {
+        Rectangle background = new Rectangle(xPosition - 5, yPosition - 20 - 5, 120 + 10, 80 + 5);
+        background.setFill(Paint.valueOf("FFFFFF"));
+
         Ellipse roof = new Ellipse(xPosition + 60, yPosition, 35, 20);
         roof.setFill(Paint.valueOf("222D4A"));
 
@@ -58,6 +56,7 @@ public class DrawingController {
         Circle frontWheel = new Circle(xPosition + 20, yPosition + 40, 10);
         Circle backWheel = new Circle(xPosition + 100, yPosition + 40, 10);
 
+        pane.getChildren().add(background);
         pane.getChildren().add(body);
         pane.getChildren().add(roof);
         pane.getChildren().add(frontWheel);

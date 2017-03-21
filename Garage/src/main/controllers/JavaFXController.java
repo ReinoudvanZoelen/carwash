@@ -57,7 +57,7 @@ public class JavaFXController {
         AutoLijst.getItems().clear();
         WasplaatsLijst.getItems().clear();
 
-        for (Auto auto : autoController.GetAll()) {
+        for (Auto auto : autoController.GetAll(false)) {
             AutoLijst.getItems().add(auto);
         }
         for (Wasplaats wasplaats : wasplaatsController.GetAll()) {

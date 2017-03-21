@@ -4,7 +4,10 @@ import main.models.Auto;
 import main.models.Garage;
 import main.models.Wasplaats;
 import main.persistance.auto.AutoController;
+import main.persistance.serialize.SerializeWasplaats;
 import main.persistance.wasplaats.WasplaatsController;
+
+import java.util.ArrayList;
 
 public class Controller {
 
@@ -19,23 +22,25 @@ public class Controller {
 
     public void start(JavaFXController javaFXController) {
         garage = new Garage();
-        time = new TimingController(garage);
+        time = new TimingController();
         javaFx = javaFXController;
         draw = new DrawingController(javaFx.getDrawPane());
         data = new DataLogicController();
 
         // Fill all the lists with data
+        data.CleanConnections();
         javaFx.populateLists();
+        draw.Draw();
     }
 
     public void AssignAutoClick(Auto auto, Wasplaats wasplaats) {
-        //data.Assign(auto, wasplaats);
+        data.Assign(auto, wasplaats);
 
         javaFx.populateLists();
 
-        draw.DrawCar(200, 200, auto);
+        draw.Draw();
 
-        time = new TimingController(garage);
+        time = new TimingController();
     }
 
     private Auto GetSelectedAuto() {

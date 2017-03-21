@@ -11,8 +11,11 @@ public class DataLogicController {
     private WasplaatsController wasplaatsController = new WasplaatsController();
     private WasplaatsAutoController koppelController = new WasplaatsAutoController();
 
-    public boolean Assign(Auto auto, Wasplaats wasplaats){
+    public void Assign(Auto auto, Wasplaats wasplaats){
         koppelController.connect(auto, wasplaats);
-        return true;
+    }
+
+    public void CleanConnections(){
+        koppelController.clean();
     }
 }
