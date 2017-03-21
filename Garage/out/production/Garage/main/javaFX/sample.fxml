@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
 <Pane fx:id="backgroundPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.controllers.JavaFXController">
    <children>
-      <Pane fx:id="drawPane" prefHeight="400.0" prefWidth="840.0">
-         <children>
-            <Button fx:id="button_WasAuto" layoutX="433.0" layoutY="346.0" mnemonicParsing="false" onAction="#wasPressed" prefHeight="40.0" prefWidth="180.0" text="was Auto" />
-            <Button fx:id="button_StartSimulatie" layoutX="224.0" layoutY="346.0" mnemonicParsing="false" onAction="#startPressed" prefHeight="40.0" prefWidth="180.0" text="Start simulatie" />
-         </children></Pane>
-      <ListView fx:id="AutoLijst" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="200.0" />
-      <ListView fx:id="WasplaatsLijst" layoutX="622.0" layoutY="14.0" prefHeight="370.0" prefWidth="200.0" />
+         <Pane fx:id="drawPane" layoutX="213.0" layoutY="14.0" prefHeight="326.0" prefWidth="410.0" />
+         <ListView fx:id="AutoLijst" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="200.0" />
+         <ListView fx:id="WasplaatsLijst" layoutX="622.0" layoutY="14.0" prefHeight="370.0" prefWidth="200.0" />
+            <Button fx:id="button_WasAuto" layoutX="430.0" layoutY="344.0" mnemonicParsing="false" onAction="#wasPressed" prefHeight="40.0" prefWidth="180.0" text="was Auto" />
+            <Button fx:id="button_StartSimulatie" layoutX="222.0" layoutY="344.0" mnemonicParsing="false" onAction="#startPressed" prefHeight="40.0" prefWidth="180.0" text="Start simulatie" />
    </children>
+
 </Pane>
