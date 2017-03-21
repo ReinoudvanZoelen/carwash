@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Continuous development">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Garage/main/javaFX/sample.fxml" afterPath="$PROJECT_DIR$/out/production/Garage/main/javaFX/sample.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controllers/Controller.java" afterPath="$PROJECT_DIR$/src/main/controllers/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/controllers/TimingController.java" afterPath="$PROJECT_DIR$/src/main/controllers/TimingController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/IWasplaatsAutoRepository.java" afterPath="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/IWasplaatsAutoRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/MySQLWasplaatsAutoRepository.java" afterPath="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/MySQLWasplaatsAutoRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/WasplaatsAutoController.java" afterPath="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/WasplaatsAutoController.java" />
     </list>
     <list id="6dbde2c5-4f92-44ab-8700-0e38f34c5371" name="Rejected commit: Default" comment="Created the DAL layer for accessing the table in between auto and wasplaats" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,75 +48,47 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="608">
+              <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
               <folding>
-                <element signature="method#GetSelectedAuto#0;class#Controller#0" expanded="false" />
-                <element signature="method#GetSelectedWasplaats#0;class#Controller#0" expanded="false" />
+                <element signature="e#1222#1223#0" expanded="true" />
+                <element signature="e#1249#1250#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/javaFX/Main.java">
+      <file leaf-file-name="TimingController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/controllers/TimingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
+            <state relative-caret-position="304">
+              <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaFXController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/controllers/JavaFXController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-141">
               <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SerializeWasplaats.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/persistance/serialize/SerializeWasplaats.java">
+      <file leaf-file-name="MySQLWasplaatsAutoRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaatsauto/MySQLWasplaatsAutoRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+            <state relative-caret-position="106">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MySQLWasplaatsRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="121" column="76" lean-forward="false" selection-start-line="121" selection-start-column="76" selection-end-line="121" selection-end-column="76" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1490119717034" expanded="true" signature="1055:1091" ph="SELECT * FRO... wasplaats" />
-                <marker date="1490119717034" expanded="true" signature="1699:1752" ph="SELECT * FRO... wasplaats" />
-                <marker date="1490119717034" expanded="true" signature="2649:2706" ph="SELECT * FRO... wasplaats" />
-                <marker date="1490119717034" expanded="true" signature="3327:3386" ph="INSERT INTO wasplaats... " />
-                <marker date="1490119717034" expanded="true" signature="3860:3927" ph="UPDATE waspl... " />
-                <marker date="1490119717034" expanded="true" signature="4446:4480" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DrawingController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/controllers/DrawingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TimingController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controllers/TimingController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1490122514417" expanded="true" signature="332:357" ph="Delete from " />
+                <marker date="1490122514417" expanded="true" signature="721:778" ph="Insert into wasplaatsauto... " />
+                <marker date="1490122514417" expanded="true" signature="1209:1251" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -186,24 +162,24 @@
         <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsController.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/auto/AutoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/WasplaatsAutoRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/WasplaatsAutoController.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/IWasplaatsAutoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/IWasplaatsRepository.java" />
         <option value="$PROJECT_DIR$/src/main/javaFX/sample.fxml" />
         <option value="$PROJECT_DIR$/src/main/persistance/auto/AutoController.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/auto/IAutoRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/controllers/JavaFXController.java" />
         <option value="$PROJECT_DIR$/src/main/controllers/DataLogicController.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/auto/MySQLAutoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/MySQLWasplaatsAutoRepository.java" />
         <option value="$PROJECT_DIR$/src/main/controllers/DrawingController.java" />
-        <option value="$PROJECT_DIR$/src/main/controllers/TimingController.java" />
         <option value="$PROJECT_DIR$/src/main/models/Wasplaats.java" />
-        <option value="$PROJECT_DIR$/src/main/javaFX/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/controllers/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/serialize/SerializeWasplaats.java" />
         <option value="$PROJECT_DIR$/src/main/persistance/wasplaats/MySQLWasplaatsRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/javaFX/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/MySQLWasplaatsAutoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/IWasplaatsAutoRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/persistance/wasplaatsauto/WasplaatsAutoController.java" />
+        <option value="$PROJECT_DIR$/src/main/controllers/JavaFXController.java" />
+        <option value="$PROJECT_DIR$/src/main/controllers/Controller.java" />
+        <option value="$PROJECT_DIR$/src/main/controllers/TimingController.java" />
       </list>
     </option>
   </component>
@@ -450,6 +426,32 @@
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimingController.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Garage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Garage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -469,7 +471,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="WasplaatsAutoController&#9;FILE&#9;file://C:/Users/Reino/Google Drive/HBO/S4/JCC/carwash/Garage/src/main/persistance/wasplaatsauto/WasplaatsAutoController.java&#10;dat&#9;FILE&#9;file://C:/Users/Reino/Google Drive/HBO/S4/JCC/carwash/Garage/src/main/persistance/Database.java&#10;FXMLLoader.&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java&#10;TimerTask&#9;PSI&#9;JAVA://java.util.TimerTask" />
+    <property name="SearchEverywhereHistoryKey" value="clean&#9;ACTION&#9;CodeCleanup&#10;WasplaatsAutoController&#9;FILE&#9;file://C:/Users/Reino/Google Drive/HBO/S4/JCC/carwash/Garage/src/main/persistance/wasplaatsauto/WasplaatsAutoController.java&#10;dat&#9;FILE&#9;file://C:/Users/Reino/Google Drive/HBO/S4/JCC/carwash/Garage/src/main/persistance/Database.java&#10;FXMLLoader.&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/fxml/FXMLLoader.java&#10;TimerTask&#9;PSI&#9;JAVA://java.util.TimerTask" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -919,7 +921,7 @@
       <workItem from="1490043823783" duration="5030000" />
       <workItem from="1490049242665" duration="405000" />
       <workItem from="1490049680272" duration="658000" />
-      <workItem from="1490086955329" duration="14688000" />
+      <workItem from="1490086955329" duration="20591000" />
     </task>
     <task id="LOCAL-00001" summary="Created the DAL layer for accessing the table in between auto and wasplaats">
       <created>1490047676575</created>
@@ -984,11 +986,25 @@
       <option name="project" value="LOCAL" />
       <updated>1490119956498</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Continuous development">
+      <created>1490120072474</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1490120072474</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Commented out Serialze so it doesnt happen every startup">
+      <created>1490121043915</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1490121043915</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108140000" />
+    <option name="totallyTimeSpent" value="114043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1012,7 +1028,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921588" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" x="1008" y="741" width="916" height="291" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4222973" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4222973" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1020,6 +1036,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21823056" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921588" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1037,7 +1054,6 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1095,14 +1111,15 @@
     <MESSAGE value="Transferred to a static database class" />
     <MESSAGE value="Slightly updated and revamped the UI to make more sense" />
     <MESSAGE value="Continuous development" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continuous development" />
+    <MESSAGE value="Commented out Serialze so it doesnt happen every startup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commented out Serialze so it doesnt happen every startup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/controllers/Controller.java</url>
-          <line>38</line>
+          <line>37</line>
           <properties />
           <option name="timeStamp" value="38" />
         </line-breakpoint>
@@ -1116,10 +1133,10 @@
           <url>file://$PROJECT_DIR$/src/main/javaFX/Main.java</url>
           <line>27</line>
           <properties />
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="44" />
+      <option name="time" value="45" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1359,25 +1376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/MySQLAutoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="124" column="0" lean-forward="true" selection-start-line="124" selection-start-column="0" selection-end-line="125" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1490090253529" expanded="true" signature="833:865" ph="Select * fro... autos" />
-            <marker date="1490090253529" expanded="true" signature="1433:1548" ph="SELECT * FRO... autos" />
-            <marker date="1490090253529" expanded="true" signature="2105:2124" ph="SELECT * FRO... autos" />
-            <marker date="1490090253529" expanded="true" signature="2747:2822" ph="SELECT * FRO... autos" />
-            <marker date="1490090253529" expanded="true" signature="2861:2951" ph="Select * fro... autos" />
-            <marker date="1490090253529" expanded="true" signature="2888:2946" ph="SELECT COUNT... wasplaatsauto" />
-            <marker date="1490090253529" expanded="true" signature="3517:3568" ph="INSERT INTO autos... " />
-            <marker date="1490090253529" expanded="true" signature="4045:4106" ph="UPDATE autos... " />
-            <marker date="1490090253529" expanded="true" signature="4623:4653" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/javafx/beans/property/ObjectPropertyBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1407,14 +1405,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaatsauto/WasplaatsAutoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="61" lean-forward="true" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/models/Wasplaats.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1422,14 +1412,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/JavaFXController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1441,70 +1423,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaatsauto/IWasplaatsAutoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaatsauto/MySQLWasplaatsAutoRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="32" column="39" lean-forward="false" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
-          <folding>
-            <marker date="1490093702778" expanded="true" signature="332:357" ph="Delete from " />
-            <marker date="1490093702778" expanded="true" signature="721:778" ph="Insert into wasplaatsauto... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaats/WasplaatsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#435#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/TimingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
-          <folding>
-            <element signature="method#GetSelectedAuto#0;class#Controller#0" expanded="false" />
-            <element signature="method#GetSelectedWasplaats#0;class#Controller#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/javaFX/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/persistance/serialize/SerializeWasplaats.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1529,6 +1453,100 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/javaFX/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/serialize/SerializeWasplaats.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaatsauto/WasplaatsAutoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="66" lean-forward="false" selection-start-line="15" selection-start-column="66" selection-end-line="15" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaatsauto/IWasplaatsAutoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/auto/MySQLAutoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="156" column="34" lean-forward="true" selection-start-line="156" selection-start-column="34" selection-end-line="156" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1490090253529" expanded="true" signature="833:865" ph="Select * fro... autos" />
+            <marker date="1490090253529" expanded="true" signature="1433:1548" ph="SELECT * FRO... autos" />
+            <marker date="1490090253529" expanded="true" signature="2105:2124" ph="SELECT * FRO... autos" />
+            <marker date="1490090253529" expanded="true" signature="2747:2822" ph="SELECT * FRO... autos" />
+            <marker date="1490090253529" expanded="true" signature="2861:2951" ph="Select * fro... autos" />
+            <marker date="1490090253529" expanded="true" signature="2888:2946" ph="SELECT COUNT... wasplaatsauto" />
+            <marker date="1490090253529" expanded="true" signature="3517:3568" ph="INSERT INTO autos... " />
+            <marker date="1490090253529" expanded="true" signature="4045:4106" ph="UPDATE autos... " />
+            <marker date="1490090253529" expanded="true" signature="4623:4653" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/persistance/wasplaatsauto/MySQLWasplaatsAutoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <marker date="1490122514417" expanded="true" signature="332:357" ph="Delete from " />
+            <marker date="1490122514417" expanded="true" signature="721:778" ph="Insert into wasplaatsauto... " />
+            <marker date="1490122514417" expanded="true" signature="1209:1251" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/JavaFXController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="39" column="17" lean-forward="true" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+          <folding>
+            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="e#1249#1250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controllers/TimingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

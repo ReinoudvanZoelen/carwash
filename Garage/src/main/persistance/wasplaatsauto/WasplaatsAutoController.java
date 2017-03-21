@@ -4,6 +4,7 @@ import main.models.Auto;
 import main.models.Wasplaats;
 
 public class WasplaatsAutoController implements IWasplaatsAutoRepository {
+
     private IWasplaatsAutoRepository context = new MySQLWasplaatsAutoRepository();
 
     @Override
@@ -12,7 +13,12 @@ public class WasplaatsAutoController implements IWasplaatsAutoRepository {
     }
 
     @Override
+    public void disconnect(Auto auto) { context.disconnect(auto); }
+
+    @Override
     public void connect(Auto auto, Wasplaats wasplaats) {
         context.connect(auto, wasplaats);
     }
+
+
 }

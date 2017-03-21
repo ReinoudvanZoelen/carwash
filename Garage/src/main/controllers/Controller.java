@@ -22,7 +22,6 @@ public class Controller {
 
     public void start(JavaFXController javaFXController) {
         garage = new Garage();
-        time = new TimingController();
         javaFx = javaFXController;
         draw = new DrawingController(javaFx.getDrawPane());
         data = new DataLogicController();
@@ -38,26 +37,12 @@ public class Controller {
 
         javaFx.populateLists();
 
+        Redraw();
+
+        time = new TimingController(this);
+    }
+
+    public void Redraw(){
         draw.Draw();
-
-        time = new TimingController();
-    }
-
-    private Auto GetSelectedAuto() {
-        if (javaFx.GetAutoID() >= 0) {
-            return autoData.GetSingle(javaFx.GetAutoID());
-        }
-        return null;
-    }
-
-    private Wasplaats GetSelectedWasplaats() {
-        if (javaFx.GetWasplaatsID() >= 0) {
-            return wasplaatsData.GetSingle(javaFx.GetWasplaatsID());
-        }
-        return null;
-    }
-
-    private void AssignAutoToGarage() {
-        garage.wasplaatsen[javaFx.GetWasplaatslistIndex()] = GetSelectedAuto();
     }
 }

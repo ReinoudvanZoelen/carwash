@@ -38,4 +38,19 @@ class MySQLWasplaatsAutoRepository implements IWasplaatsAutoRepository{
             Database.disconnect();
         }
     }
+
+    @Override
+    public void disconnect(Auto auto) {
+        String sql = "DELETE FROM wasplaatsauto WHERE autoID = ?";
+
+        try {
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
+            ex.setInt(1, auto.getId());
+            ex.executeUpdate();
+        } catch (Exception var7) {
+            var7.printStackTrace();
+        } finally {
+            Database.disconnect();
+        }
+    }
 }
