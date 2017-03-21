@@ -11,7 +11,6 @@ import java.util.ArrayList;
 
 class MySQLWasplaatsRepository implements IWasplaatsRepository {
 
-    Database db = new Database();
     private AutoController autoRepo = new AutoController();
 
     private Wasplaats CreateObject(ResultSet result) {
@@ -49,7 +48,7 @@ class MySQLWasplaatsRepository implements IWasplaatsRepository {
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
 
         return wasplaats;
@@ -71,7 +70,7 @@ class MySQLWasplaatsRepository implements IWasplaatsRepository {
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
 
         return wasplaats;
@@ -96,7 +95,7 @@ class MySQLWasplaatsRepository implements IWasplaatsRepository {
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
 
         return wasplaatsen;
@@ -107,23 +106,23 @@ class MySQLWasplaatsRepository implements IWasplaatsRepository {
         String sql = "INSERT INTO wasplaats(type, previousWasplaatsId)VALUES(?,?)";
 
         try {
-            PreparedStatement ex = db.connect().prepareStatement(sql);
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
             ex.setString(1, wasplaats.getType());
             ex.setInt(2, wasplaats.getVerbondenWasplaats().getId());
             ex.executeUpdate();
         } catch (SQLException var7) {
             var7.printStackTrace();
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
     }
 
     @Override
     public void update(Wasplaats wasplaats) {
-        String sql = "UPDATE wasplaats SET type = ?, previousWasplaatsId = ?) WHERE id = ?";
+        String sql = "UPDATE wasplaats SET type = ?, previousWasplaatsId = ? WHERE id = ?";
 
         try {
-            PreparedStatement ex = db.connect().prepareStatement(sql);
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
             ex.setString(1, wasplaats.getType());
             ex.setInt(2, wasplaats.getVerbondenWasplaats().getId());
             ex.setInt(3, wasplaats.getId());
@@ -131,7 +130,7 @@ class MySQLWasplaatsRepository implements IWasplaatsRepository {
         } catch (SQLException var7) {
             var7.printStackTrace();
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
     }
 
@@ -140,13 +139,13 @@ class MySQLWasplaatsRepository implements IWasplaatsRepository {
         String sql = "DELETE FROM wasplaats WHERE id = ?";
 
         try {
-            PreparedStatement ex = db.connect().prepareStatement(sql);
+            PreparedStatement ex = Database.connect().prepareStatement(sql);
             ex.setInt(1, wasplaats.getId());
             ex.executeUpdate();
         } catch (SQLException var7) {
             var7.printStackTrace();
         } finally {
-            db.disconnect();
+            Database.disconnect();
         }
     }
 }
