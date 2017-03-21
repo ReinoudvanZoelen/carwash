@@ -19,7 +19,7 @@ public class Main extends Application {
         primaryStage.setScene(new Scene(root, 840, 400));
         primaryStage.show();
 
-        Serialize();
+        //Serialize();
     }
 
     private void Serialize() {
